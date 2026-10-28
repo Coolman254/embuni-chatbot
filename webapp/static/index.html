@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Embu Student Help</title>
+<link rel="icon" href="/static/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #14284f;
+    --navy-2: #1d3868;
+    --gold: #d9a21b;
+    --gold-soft: #f6e7bd;
+    --bg: #f2f4f8;
+    --card: #ffffff;
+    --ink: #1a2238;
+    --muted: #5d6781;
+    --line: #dde2ec;
+    --ok: #1f7a4d;
+    --bad: #b3372f;
+  }
+  :root:not([data-theme="light"]) { color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0e1627; --card: #17223a; --ink: #e8ecf6; --muted: #9aa5c0; --line: #28375a;
+      --gold-soft: #3a3217;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.55 "Public Sans", system-ui, sans-serif;
+    display: flex; flex-direction: column;
+  }
+
+  /* ---------- header ---------- */
+  header {
+    background: var(--navy); color: #fff;
+    border-bottom: 4px solid var(--gold);
+  }
+  .bar {
+    max-width: 860px; margin: 0 auto; padding: 12px 16px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .bar img { width: 52px; height: 52px; background: #fff; border-radius: 8px; padding: 3px; flex: none; }
+  .bar h1 { font: 700 1.3rem/1.15 "Fraunces", Georgia, serif; margin: 0; letter-spacing: .005em; }
+  .bar p { margin: 2px 0 0; font-size: .85rem; color: #c6d0e8; }
+  nav { margin-left: auto; display: flex; gap: 4px; }
+  nav button {
+    background: transparent; color: #c6d0e8; border: 0; padding: 8px 12px; border-radius: 8px;
+    font: 500 .92rem "Public Sans", sans-serif; cursor: pointer;
+  }
+  nav button[aria-selected="true"] { background: rgba(255,255,255,.14); color: #fff; }
+  nav button:hover { color: #fff; }
+
+  /* ---------- layout ---------- */
+  main { flex: 1; min-height: 0; display: flex; flex-direction: column; max-width: 860px; width: 100%; margin: 0 auto; }
+  section[hidden] { display: none !important; }
+  #chatTab { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  #log { flex: 1; overflow-y: auto; padding: 20px 16px 8px; scroll-behavior: smooth; }
+
+  /* ---------- welcome ---------- */
+  .welcome { padding: 18px 0 6px; }
+  .welcome h2 { font: 700 1.9rem/1.15 "Fraunces", Georgia, serif; margin: 0 0 8px; color: var(--navy); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .welcome h2 { color: #fff; } }
+  .welcome p { margin: 0 0 18px; color: var(--muted); max-width: 52ch; }
+  .starters { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; }
+  .starters button {
+    text-align: left; background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--gold);
+    border-radius: 10px; padding: 12px 14px; font: 500 .95rem "Public Sans", sans-serif; color: var(--ink); cursor: pointer;
+  }
+  .starters button:hover { border-color: var(--navy-2); border-left-color: var(--gold); }
+
+  /* ---------- messages ---------- */
+  .msg { display: flex; margin: 14px 0; }
+  .msg.user { justify-content: flex-end; }
+  .bubble {
+    max-width: min(640px, 92%); padding: 11px 15px; border-radius: 14px;
+    overflow-wrap: anywhere;
+  }
+  .user .bubble { background: var(--navy); color: #fff; border-bottom-right-radius: 4px; }
+  .bot .bubble { background: var(--card); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+  .bubble p { margin: 0 0 .6em; } .bubble p:last-child { margin: 0; }
+  .bubble ul { margin: .3em 0 .6em; padding-left: 1.2em; }
+
+  .sources { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--line); }
+  .src {
+    display: inline-flex; align-items: center; gap: 8px; background: var(--gold-soft); color: var(--ink);
+    border-radius: 8px; padding: 4px 10px 4px 4px; font-size: .8rem;
+  }
+  a.src { text-decoration: none; }
+  a.src:hover { outline: 2px solid var(--gold); }
+  .src b { background: var(--navy); color: #fff; border-radius: 6px; padding: 2px 7px; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .src b { background: var(--gold); color: #14284f; } }
+
+  .meta { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: .78rem; color: var(--muted); }
+  .meta .sp { flex: 1; }
+  .rate {
+    background: transparent; border: 1px solid var(--line); color: var(--muted); border-radius: 8px;
+    padding: 3px 9px; cursor: pointer; font: 500 .8rem "Public Sans", sans-serif;
+  }
+  .rate:hover { border-color: var(--navy-2); color: var(--ink); }
+  .rate[aria-pressed="true"].up { background: var(--ok); border-color: var(--ok); color: #fff; }
+  .rate[aria-pressed="true"].down { background: var(--bad); border-color: var(--bad); color: #fff; }
+  .rate:disabled:not([aria-pressed="true"]) { opacity: .45; cursor: default; }
+
+  /* thinking */
+  .thinking { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: .92rem; }
+  .dots { display: inline-flex; gap: 4px; }
+  .dots i { width: 7px; height: 7px; border-radius: 50%; background: var(--gold); animation: blink 1.2s infinite ease-in-out; }
+  .dots i:nth-child(2) { animation-delay: .18s; } .dots i:nth-child(3) { animation-delay: .36s; }
+  @keyframes blink { 0%, 80%, 100% { opacity: .25; transform: scale(.8); } 40% { opacity: 1; transform: scale(1); } }
+
+  /* ---------- composer ---------- */
+  .composer { padding: 10px 16px 16px; background: linear-gradient(to top, var(--bg) 70%, transparent); }
+  form { display: flex; gap: 8px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 6px 6px 6px 14px; }
+  form:focus-within { border-color: var(--navy-2); box-shadow: 0 0 0 3px rgba(29,56,104,.18); }
+  textarea:focus-visible { outline: 0; }
+  textarea {
+    flex: 1; border: 0; outline: 0; resize: none; background: transparent; color: var(--ink);
+    font: inherit; padding: 8px 0; max-height: 120px;
+  }
+  .send {
+    background: var(--gold); color: #14284f; border: 0; border-radius: 10px; padding: 0 18px;
+    font: 600 .95rem "Public Sans", sans-serif; cursor: pointer;
+  }
+  .send:disabled { opacity: .5; cursor: default; }
+  .note { margin: 8px 4px 0; font-size: .76rem; color: var(--muted); }
+
+  /* ---------- map tab ---------- */
+  #mapTab { flex: 1; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+  #mapTab h2 { font: 700 1.4rem "Fraunces", Georgia, serif; margin: 0; }
+  #mapTab iframe { flex: 1; min-height: 360px; width: 100%; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+  #mapTab a { color: var(--navy-2); font-weight: 600; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #mapTab a { color: var(--gold); } }
+
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+  @media (max-width: 560px) {
+    .bar { flex-wrap: wrap; } nav { margin-left: 0; width: 100%; }
+    nav button { flex: 1; }
+    .welcome h2 { font-size: 1.55rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div class="brand">
+      <img src="/static/logo.png" alt="University of Embu coat of arms">
+      <div>
+        <h1>Embu Student Help</h1>
+        <p>Answers from official University of Embu documents</p>
+      </div>
+    </div>
+    <nav role="tablist" aria-label="Sections">
+      <button role="tab" id="tabChat" aria-selected="true">Ask</button>
+      <button role="tab" id="tabMap" aria-selected="false">Campus map</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="chatTab" aria-labelledby="tabChat">
+    <div id="log" aria-live="polite">
+      <div class="welcome" id="welcome">
+        <h2>What do you need to know?</h2>
+        <p>Ask about fees, exams, registration, attendance, discipline and other rules in the student handbook.</p>
+        <div class="starters" id="starters"></div>
+      </div>
+    </div>
+    <div class="composer">
+      <form id="form">
+        <textarea id="q" rows="1" maxlength="500" placeholder="Type your question" aria-label="Your question"></textarea>
+        <button class="send" id="send" type="submit">Send</button>
+      </form>
+      <p class="note">Answers come from the documents loaded in this system and can be wrong. Check important details with the relevant university office.</p>
+    </div>
+  </section>
+
+  <section id="mapTab" hidden aria-labelledby="tabMap">
+    <h2>Find the campus</h2>
+    <iframe title="University of Embu on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=University+of+Embu&amp;output=embed"></iframe>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=University+of+Embu" target="_blank" rel="noopener">Open in Google Maps</a>
+  </section>
+</main>
+
+<script>
+const STARTERS = [
+  "What are the fee payment deadlines?",
+  "How do I defer a semester?",
+  "What is the minimum class attendance to sit an exam?",
+  "What happens if I miss an exam?"
+];
+
+const $ = (id) => document.getElementById(id);
+const log = $("log"), form = $("form"), q = $("q"), send = $("send");
+
+// starters
+for (const s of STARTERS) {
+  const b = document.createElement("button");
+  b.type = "button"; b.textContent = s;
+  b.onclick = () => ask(s);
+  $("starters").appendChild(b);
+}
+
+// tabs
+function showTab(name) {
+  const chat = name === "chat";
+  $("chatTab").hidden = !chat; $("mapTab").hidden = chat;
+  $("tabChat").setAttribute("aria-selected", chat); $("tabMap").setAttribute("aria-selected", !chat);
+}
+$("tabChat").onclick = () => showTab("chat");
+$("tabMap").onclick = () => showTab("map");
+
+// composer behaviour
+q.addEventListener("input", () => { q.style.height = "auto"; q.style.height = Math.min(q.scrollHeight, 120) + "px"; });
+q.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+});
+form.addEventListener("submit", (e) => { e.preventDefault(); const t = q.value.trim(); if (t) ask(t); });
+
+// safe, minimal formatting: escape first, then allow **bold**, bullet lists and paragraphs
+function esc(s) { return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function format(text) {
+  const lines = esc(text).split(/\n/);
+  let html = "", list = false;
+  for (const raw of lines) {
+    const line = raw.trim().replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    const m = line.match(/^(?:[-*•]|\d+[.)])\s+(.*)/);
+    if (m) { if (!list) { html += "<ul>"; list = true; } html += `<li>${m[1]}</li>`; continue; }
+    if (list) { html += "</ul>"; list = false; }
+    if (line) html += `<p>${line}</p>`;
+  }
+  if (list) html += "</ul>";
+  return html;
+}
+
+function addMsg(kind, inner) {
+  const wrap = document.createElement("div");
+  wrap.className = "msg " + kind;
+  const b = document.createElement("div");
+  b.className = "bubble"; b.innerHTML = inner;
+  wrap.appendChild(b); log.appendChild(wrap);
+  log.scrollTop = log.scrollHeight;
+  return { wrap, bubble: b };
+}
+
+let busy = false;
+async function ask(text) {
+  if (busy) return;
+  busy = true; send.disabled = true;
+  $("welcome")?.remove();
+  addMsg("user", `<p>${esc(text)}</p>`);
+  q.value = ""; q.style.height = "auto";
+  const t = addMsg("bot", `<div class="thinking"><span class="dots"><i></i><i></i><i></i></span>Searching the documents</div>`);
+  try {
+    const r = await fetch("/api/ask", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ question: text }) });
+    if (!r.ok) throw new Error("Server returned " + r.status);
+    renderAnswer(t.bubble, await r.json());
+  } catch (err) {
+    t.bubble.innerHTML = `<p>I couldn't get an answer. Check that the server and Ollama are running, then try again.</p>`;
+  } finally {
+    busy = false; send.disabled = false; q.focus();
+    log.scrollTop = log.scrollHeight;
+  }
+}
+
+function renderAnswer(bubble, d) {
+  let html = format(d.answer);
+  if (d.sources.length) {
+    html += `<div class="sources" aria-label="Sources">` +
+      d.sources.map((s) => s.url
+        ? `<a class="src" href="${esc(s.url)}" target="_blank" rel="noopener"><b>web</b>${esc(s.doc)}</a>`
+        : `<span class="src"><b>${s.page ? "p. " + s.page : "doc"}</b>${esc(s.doc)}</span>`).join("") + `</div>`;
+  }
+  html += `<div class="meta"><span>${d.seconds}s</span><span class="sp"></span>` +
+    `<span>Was this helpful?</span>` +
+    `<button class="rate up" aria-pressed="false" aria-label="Helpful">Yes</button>` +
+    `<button class="rate down" aria-pressed="false" aria-label="Not helpful">No</button></div>`;
+  bubble.innerHTML = html;
+  const [up, down] = bubble.querySelectorAll(".rate");
+  const rate = async (btn, other, value) => {
+    btn.setAttribute("aria-pressed", "true"); up.disabled = down.disabled = true;
+    let comment = "";
+    if (value === -1) comment = prompt("What was wrong with this answer? (optional)") || "";
+    try {
+      await fetch("/api/feedback", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query_id: d.id, rating: value, comment }) });
+    } catch (e) { /* feedback is best-effort */ }
+  };
+  up.onclick = () => rate(up, down, 1);
+  down.onclick = () => rate(down, up, -1);
+}
+</script>
+</body>
+</html>

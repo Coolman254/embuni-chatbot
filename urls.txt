@@ -1,0 +1,24 @@
+# One address per line. Lines starting with # are ignored.
+# These were taken from the University's own fee structure page on 2026-10-16.
+# Pages move and fees change: re-check them every few months.
+
+# --- Fee structures (PDF), linked from https://embuni.ac.ke/fee-structure/ ---
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-UoEm-Diploma-programmes.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-UoEm-Certificate-programmes.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-PostGraduate-Diploma-in-Education.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-Masters-Fulltime-SSP.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-PhD.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fee_Structure_for_UoEm_TVET-Dip_and_Cert_programmes.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/09/TVET-Senate-Examined-Programmes-Fees-Structure.pdf
+https://embuni.ac.ke/wp-content/uploads/2026/02/Sep_2024_Fees-structure-for-CPA_ATD.pdf
+
+# --- The fee structure page itself, and other web pages ---
+https://embuni.ac.ke/fee-structure/
+https://embuni.ac.ke/faq/
+https://admissions.embuni.ac.ke/index.php/our-services/2-uncategorised/28-processing-student-s-requests
+
+# --- Other PDFs ---
+https://departments.embuni.ac.ke/firstyears/images/messages/Updated/DEPARTMENTS__SECTION.pdf
+
+# NOT included: the Bachelors fee structure. It was not in the PDF links found on the fee page.
+# Open https://embuni.ac.ke/fee-structure/ in a browser, find the Bachelors link, and add it here.

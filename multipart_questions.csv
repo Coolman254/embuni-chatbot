@@ -1,0 +1,9 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+137,multipart,What is the University of Embu motto and what are its core values?,"Motto: Knowledge Transforms; core values: Integrity, Professionalism, Team work, Innovativeness, Customer focus",2,yes,,knowledge transforms;integrity;customer focus
+138,multipart,How many books can an undergraduate borrow and how many can a postgraduate borrow?,Undergraduate 4 books (14 days); postgraduate 6 books (30 days),58,yes,,4;6
+139,multipart,When are CAT 1 and CAT 2 done and what must I carry to the exam room?,"CAT 1 6th-7th week, CAT 2 10th or 11th week; Examination Card and student ID",39,yes,,6th;examination card
+140,multipart,What is the surcharge for paying fees late and what is the minimum first payment under phased payment?,"Surcharge KShs 3,000 plus 2.5% admin fee; at least 50% before the registration deadline",17,yes,,"3,000|3000;50"
+141,multipart,What are the Health Unit's opening hours and where are students referred when it cannot treat them?,"Mon-Fri 8am-10pm, weekends/public holidays 8am-5pm; Embu Level 5 Hospital",22,yes,,10:00 p.m.|10.00 p.m.|10 p.m.;level 5
+142,multipart,What attendance do I need to sit exams and what happens if I cheat in an exam?,At least 70% of lectures per unit; expulsion from the University,39,yes,,70;expulsion
+143,multipart,Who is the Vice-Chancellor and what is the student portal address?,Prof. Daniel Mugendi Njiru; http://portal.embuni.ac.ke/,6,yes,,njiru;portal.embuni.ac.ke
+144,multipart,What is the tuition per semester for BSc Computer Science and what is the HELB loan amount per year?,"KES 129,600 per semester; HELB amount not in documents (should say it does not know that part)",,yes,,

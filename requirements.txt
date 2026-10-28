@@ -1,0 +1,10 @@
+chromadb
+sentence-transformers
+pymupdf
+ollama
+openai
+streamlit
+fastapi
+uvicorn[standard]
+requests
+beautifulsoup4
