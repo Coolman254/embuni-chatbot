@@ -1,0 +1,4 @@
+SOURCE: E-LEARNING_MANUAL_FOR_STUDENTS.pdf
+TITLE: Online class will not open: what to check
+
+If you cannot get into an online class or do not see the redirecting to meeting message after joining, check these four things: 1. the room passcode has been typed and entered correctly; 2. you have cleared your cache and browser history; 3. the device you are using is connected to the internet; 4. your device microphone is enabled and the earpiece has no problem.

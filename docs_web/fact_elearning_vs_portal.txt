@@ -1,0 +1,4 @@
+SOURCE: E-LEARNING_MANUAL_FOR_STUDENTS.pdf
+TITLE: E-learning platform and student portal are different systems
+
+The University of Embu E-Learning platform (https://e-learning.embuni.ac.ke/, Moodle) and the student portal (used for fees, registration and fee statements) are separate systems with separate accounts. An e-learning account is created by the student with their admission number as username, and its password is reset with the Lost Password link on the e-learning login page.

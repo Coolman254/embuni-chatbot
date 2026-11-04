@@ -1,0 +1,12 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+165,elearning,how do i get to the e-learning site,"Go to www.embuni.ac.ke and click the E-Learning tab (On-Campus Blended), or type https://e-learning.embuni.ac.ke/",1,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,e-learning.embuni.ac.ke|embuni.ac.ke
+166,elearning,what username do i use for e-learning,"Your admission number, with the first letter in small letters",2,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,admission number
+167,elearning,what are the password rules for the e-learning account,"A mixture of a capital letter, numbers and special characters (#, @, $)",2,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,special
+168,elearning,i made an e-learning account but i cant log in,First confirm the account by clicking the link sent to your student email,3,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,confirm
+169,elearning,how do i enrol in my unit on e-learning,"Search for the unit on Home, pick the one on your timetable (current semester), then click Enroll me under self-enrolment",6,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,enroll me|enrol me
+170,elearning,what can i find on my unit page in e-learning,"Web-conference links, welcome message, resources and tools, topics, discussion forums, assignments and CATs",6,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,forum
+171,elearning,how do i join an online class,"Open the meeting link, type your names and registration number, enter the room passcode, tick I'm not a robot and click Join Meeting",15,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,join meeting
+172,elearning,the online class wont let me in what should i check,"Check the passcode is typed correctly, clear cache and browser history, check the internet connection and the microphone/earpiece",16,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,cache|passcode
+173,elearning,i forgot my e-learning password,"Click Lost Password, search with your username or email, open the reset link sent to your email and set a new password",17,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,lost password
+174,elearning,what is the room passcode for the online class,REFUSE,,no,,
+175,elearning,how much does it cost to use the e-learning platform,REFUSE,,no,,

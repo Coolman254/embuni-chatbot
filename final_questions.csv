@@ -1,0 +1,176 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+1,fees,Are hostel charges included in tuition fees?,"No, accommodation charges are usually not included in the fee structure",64,yes,,
+2,requests,How do I withdraw from the university?,"Notify the Registrar (ARE) of your intention; once approval is granted, start the clearance process",17,yes,,
+3,not-in-docs,What is the HELB loan amount a student can receive per year?,REFUSE,,no,,
+4,not-in-docs,What are the cluster points needed to join Bachelor of Laws?,REFUSE,,no,,
+5,ict,What is the student portal address?,http://portal.embuni.ac.ke/,59,yes,,
+6,not-in-docs,What is the weather in Embu today?,REFUSE,,no,,
+7,requests,What is the difference between semester call-off and deferment?,Call-off is for students who have completed at least one semester and want a break; deferment is for new students who delay the start of their studies,63,yes,,
+8,not-in-docs,What is the fine for parking a car on campus?,REFUSE,,no,,
+9,not-in-docs,What is the exact tuition fee per semester for BSc Computer Science?,"KES 129,600 per semester (Bachelors fee structure)",,yes,Bachelors fee structure (embuni.ac.ke/fee-structure),129600
+10,general,What are the core values of the University of Embu?,"Integrity, Professionalism, Team work, Innovativeness, Customer focus",2,yes,,
+11,requests,Who can apply for a semester off and how?,A student who has completed at least one semester; apply online through the student portal before the semester begins,16,yes,,
+12,general,What is the University of Embu's motto?,Knowledge Transforms,2,yes,,
+13,exams,What is the penalty for cheating or having a phone in the exam room?,Expulsion from the University,44,yes,,
+14,conduct,Do pregnant students have to leave the hostel?,"Yes, at least three months before confinement",53,yes,,
+15,requests,When can government sponsored students ask for an inter or intra school transfer?,Only at the beginning of an academic year,16,yes,,
+16,academics,When are CAT 1 and CAT 2 done?,CAT 1 in the 6th-7th week; CAT 2 in the 10th or 11th week of the semester,39,yes,,
+17,requests,"I failed to report for the semester on the portal and it is late, what can I do?",Write a request to the Registrar (ARE) giving reasons; after approval and payment of penalties visit the Admissions Data office. A semester that has already expired cannot be reported,63,yes,,
+18,accommodation,How are hostel rooms allocated?,"First come first served, subject to payment of the full accommodation fee for one academic year; admission does not automatically guarantee accommodation",23,yes,,
+19,library,who is the library named after,Prof. George Magoha,57,yes,,
+20,ict,Which e-learning platform does the university use?,Moodle LMS,61,yes,,
+21,accommodation,How long can I be away from the hostel without permission?,More than seven days requires written permission from the Dean of Students; two continuous weeks absent without permission means forfeiting residence,50,yes,,
+22,general,how far is the uni from embu town and which road is it on,About 3 km from Embu town along the Embu-Meru highway (approx. 125 km north-east of Nairobi),10,yes,,
+23,exams,What is a supplementary exam?,A student with grade F who has met other programme requirements may sit a supplementary exam on payment of fees; the maximum grade is the lowest pass grade,41,yes,,
+24,welfare,How do I start a new club or society?,"Prepare objectives, interim office bearers and patron, likely membership and funding sources; discuss with the Dean of Students; apply to the DVC (ARE) through the Dean of Students",52,yes,,
+25,registration,When does the academic year start and end?,It runs from September to August of the following year,15,yes,,
+26,academics,What class attendance do I need to be allowed to sit exams?,"Section 3.3: at least 70% of lectures per unit. Note the handbook is inconsistent: section 4.7 says at least two-thirds, section 5.14 says more than one-third missed bars a student, and TVET external exams need 75%",39,yes,,
+27,admissions,In which months does the university admit students?,"Handbook table (section 1.4.3): January, April, May, August, September and December depending on mode of study (full-time intakes in January, May, September). Note: the FAQ on page 62 lists only January, May and September",14,yes,,
+28,fees,What are the Student Finance Office contacts?,Mobile 0700913623; email finance@embuni.ac.ke; website departments.embuni.ac.ke/finance,64,yes,,
+29,registration,Do I have to pay fees before I can register for course units?,"Activation and unit registration are not dependent on fee payment, but registration alone does not qualify a student to sit end of semester exams; fees must be cleared to complete registration",15,yes,,
+30,not-in-docs,Where can I buy textbooks in Embu town?,REFUSE,,no,,
+31,graduation,What do I need to qualify for graduation?,"Complete minimum residence time, pass all specified courses, attain required contact hours, have no pending disciplinary case, and meet all financial obligations",46,yes,,
+32,conduct,Can I bring a car or motorbike onto campus?,"Only with prior written permission from the University administration, with proof of a current driving licence and valid insurance",48,yes,,
+33,health,Are outpatient services at the Health Unit free?,"Outpatient services carry no additional cost to the student; specialised services such as optical, specialised dental and radiology are paid by parents/guardians",23,yes,,
+34,exams,What are the rules about arriving late or leaving early in an exam?,No entry after 30 minutes from the start; no leaving before 30 minutes have elapsed,44,yes,,
+35,not-in-docs,How much is the replacement fee for a lost student ID?,REFUSE,,no,,
+36,not-in-docs,How do I apply for admission at Kenyatta University?,REFUSE,,no,,
+37,graduation,When must graduation forms be submitted?,"At least four weeks before the graduation date, to the Registrar (ARE) through the department and School",46,yes,,
+38,not-in-docs,What are the entry requirements for Bachelor of Medicine and Surgery (MBChB)?,REFUSE,,no,,
+39,exams,How do I request remarking of an exam?,Appeal to the DVC (ARE) through the Chairman of Department within the prescribed period and pay the non-refundable fee; allowed once per paper and the result is final,43,yes,,
+40,fees,What is the surcharge for paying fees late?,"KShs 3,000 on top of the 2.5% administrative fee on the outstanding balance; all outstanding fees must be cleared by the end of the 13th week",17,yes,,
+41,requests,How do I defer my studies and for how long?,"Notify the University in writing or apply online; the start date can be revised to not later than two academic years from admission, otherwise the offer is forfeited",16,yes,,
+42,not-in-docs,What time does the library open and close?,REFUSE,,no,,
+43,fees,Who qualifies for a tuition waiver?,"University staff (permanent and contract), their dependants, employees of organisations with an MoU with the University, and other groups determined by management",63,yes,,
+44,exams,What must I carry to an exam room?,"The Examination Card and the student ID, both displayed on the desk throughout",44,yes,,
+45,fees,How do I view my fee statement?,From the student portal's financial report/fees section,64,yes,,
+46,admissions,Does the university allow credit transfer or credit waiver?,Yes. Fill in the application form available at the Office of the Registrar (ARE) and submit it for processing,62,yes,,
+47,grading,What is the grading system?,A: 70% and above; B: 60% to below 70%; C: 50% to below 60%; D: 40% to below 50%; F: below 40%,46,yes,,
+48,general,When did the University of Embu receive its charter?,"7 October 2016 (awarded by the then President Uhuru Kenyatta at State House, Nairobi)",10,yes,,
+49,exams,How many times can I repeat a year of study?,Only once,43,yes,,
+50,not-in-docs,What is the remarking fee in shillings?,REFUSE,,no,,
+51,accommodation,Can visitors come into the hostels?,"Not unless authorised by the Dean of Students (page 23); under the conduct rules visitors are admitted to rooms only between 10.00 a.m. and 10.00 p.m., and hall doors close at 10.30 p.m.",23,yes,,
+52,exams,when will a student be discontinued on academic grounds,Failing more than 75% of the units taken in an academic year (under both supplementary and retake systems); also failing retakes after two attempts and a repeated year,45,yes,,
+53,exams,How long are exam scripts kept?,"Five academic years, then archived for three more years, then destroyed",43,yes,,
+54,requests,What is the maximum time to finish a programme if I take semesters off?,The total time including semesters off must not exceed double the programme cycle,16,yes,,
+55,not-in-docs,What date is the 2025 graduation ceremony?,REFUSE,,no,,
+56,health,What are the Health Unit's opening hours?,Monday to Friday 8:00 a.m. to 10:00 p.m.; weekends and public holidays 8:00 a.m. to 5:00 p.m.; after hours contact the Hostel Attendant on duty,22,yes,,
+57,welfare,How do I apply for a bursary or financial aid?,Applications are made each academic year following a call to all students; forms are on the Dean of Students sub-portal; awards are merit based and made once a year,19,yes,,
+58,graduation,What score is needed for First Class Honours?,70% and above,47,yes,,
+59,conduct,How soon does the Disciplinary Committee meet after a report is received?,Within one month; the student may be represented in person but not by a lawyer,55,yes,,
+60,not-in-docs,Who won the World Cup?,REFUSE,,no,,
+61,catering,What are the dining hall meal times?,"Breakfast 6.30-9.00 a.m., lunch 11.30 a.m.-2.30 p.m., dinner 6.00-9.00 p.m., Monday to Sunday",23,yes,,
+62,exams,Who can sit special exams?,Students who could not sit end of semester exams for medical or compassionate grounds accepted by the Senate,41,yes,,
+63,fees,How do I get my caution money back?,"After clearing, collect it from the Students Finance Office; if late, write to the DVC (ARE) requesting a refund",63,yes,,
+64,welfare,How can I make a complaint to the university?,"Suggestion boxes, offices of the VC/DVCs/Customer Relations Officer, email complaints@embuni.ac.ke, phone 0705945412, complaints registers, online complaints portal, or write to the VC at P.O. Box 6-60100, Embu",21,yes,,
+65,library,What is the borrowing limit for postgraduate students?,6 books for 30 days,58,yes,,
+66,registration,How long do I have to register at the start of a semester?,The first three weeks of the semester,39,yes,,
+67,not-in-docs,What is the student population of the University of Nairobi?,REFUSE,,no,,
+68,welfare,What is a leave-out and how do I get one?,Permission to be away for a short period within a semester; register the intention using the online leave-out form and have it approved before leaving,19,yes,,
+69,registration,What happens if I do not register for a semester?,The student is deemed to have absconded studies (section 1.6); section 3.1 says a student who fails to register within the period is deemed to have deferred (first years) or called off (continuing students),15,yes,,
+70,general,Who is the Vice-Chancellor of the University of Embu?,Prof. Daniel Mugendi Njiru (per the 2024/2025 handbook),6,yes,,
+71,not-in-docs,What is the campus Wi-Fi password?,REFUSE,,no,,
+72,not-in-docs,Who is the current Dean of Students?,REFUSE,,no,,
+73,not-in-docs,Write me a poem about Embu.,REFUSE,,no,,
+74,ict,"I lost my student ID, what should I do?",Report to the Security Office and fill an Abstract form; pay the replacement fee at the Finance Office; take the Abstract and proof of payment to the ICT office for a new ID,59,yes,,
+75,fees,Can I pay my fees in instalments and what are the conditions?,"Yes, phased payment: at least 50% before the registration deadline, at least 75% by the end of week 7, balance by the end of week 11, with a 2.5% administrative fee on the outstanding balance at each interval",17,yes,,
+76,registration,What are the semesters in an academic year and when do they run?,First semester September-December; second semester January-April; trimester May-August,15,yes,,
+77,conduct,When must a pregnant student report her pregnancy?,To the University Medical Officer before the end of the first three months of pregnancy,53,yes,,
+78,not-in-docs,How do I reset my student portal password?,REFUSE,,no,,
+79,exams,What attendance is required when retaking a unit?,"At least 50% of classes in the unit retaken, plus other unit requirements",42,yes,,
+80,conduct,How long do I have to appeal a disciplinary committee decision?,In writing to the Vice-Chancellor within 14 days of the date the decision is communicated,56,yes,,
+81,not-in-docs,What is the exact date the next semester opens?,REFUSE,,no,,
+82,fees,Can I sit exams if I have not cleared my fees?,No. Only students who have cleared the semester fees may sit end of semester exams,63,yes,,
+83,admissions,What KCSE grade do I need to join a bachelor's degree?,"C+ (plus) at KCSE or equivalent, or C- (minus) with a relevant diploma",14,yes,,
+84,exams,How many chances do I get to retake a failed unit?,"Retake (R), then Re-Retake (RR); failing RR means repeating the year; a third retake (RRR) only under special circumstances approved by the DVC Academics",42,yes,,
+85,exams,What is the maximum number of units I can register for in a semester with retakes?,Seven units; an eighth may be approved in writing by the Dean of the School,42,yes,,
+86,admissions,How long does it take to process an admission letter?,Within seven working days of receipt of the duly filled application forms,62,yes,,
+87,general,"How many schools does the University of Embu have, and what are they?",Six: Agriculture; Pure and Applied Sciences; Nursing; Business and Economics; Education and Social Sciences; Law,26,yes,,
+88,fees,When must fees be paid?,In full upon reporting; fees must be paid and registration completed within the first three weeks of the semester,17,yes,,
+89,grading,What is the pass mark for masters and taught doctorate programmes?,50%,46,yes,,
+90,admissions,How can a self-sponsored student apply to the university?,"Complete the application form (electronically or hard copy) and submit it to the Admissions Office or Registrar (ARE), or email admissions@embuni.ac.ke, with certificates/result slips and the application fee deposit slip or M-Pesa code",14,yes,,
+91,library,How many books can an undergraduate borrow and for how long?,4 books for 14 days; overdue fine KSh 5 per day,58,yes,,
+92,accommodation,can i cook in my hostel room,No. Cooking and unauthorised electrical appliances in the halls of residence are prohibited,50,yes,,
+93,admissions,"What are the Admissions Office contacts, location and opening hours?","Mobile 0706 525 878; admissions@embuni.ac.ke; Administration Block Rooms 9, 10, 11 and 12; Monday to Friday 8.00 a.m. to 5.00 p.m.",62,yes,,
+94,graduation,What happens if I do not collect my certificate after graduating?,After two months an annual storage fee is charged,47,yes,,
+95,admissions,how long is a diploma and what grade do i need,"2 years; C- at KCSE or equivalent, or D+ with a relevant certificate",14,yes,,
+96,admissions,How do government sponsored students apply for a place?,Through KUCCPS (Kenya Universities and Colleges Central Placement Services),13,yes,,
+97,not-in-docs,How much does hostel accommodation cost per year?,REFUSE,,no,,
+98,academics,What should I do if I miss a CAT because I was sick?,"Report to the lecturer, the Chairman of Department and the Dean of Students; a make-up CAT is given before the end of semester exams",40,yes,,
+99,registration,What study mode can government sponsored students use?,Full-time only,15,yes,,
+100,health,Where are students referred when the Health Unit cannot treat them?,Embu Level 5 Hospital,22,yes,,
+101,fees-bachelors,How much is the fee per semester for Bachelor of Science (Computer Science)?,"KES 129,600 per semester",,yes,https://embuni.ac.ke/fee-structure/,129600
+102,fees-bachelors,What is the total yearly fee for Bachelor of Science (Nursing)?,"KES 288,000 per year",,yes,https://embuni.ac.ke/fee-structure/,288000
+103,fees-bachelors,What is the yearly fee for a Bachelor of Commerce?,"KES 150,503 per year",,yes,https://embuni.ac.ke/fee-structure/,150503
+104,fees-bachelors,How much is the fee per semester for Bachelor of Laws (LL.B.)?,"KES 96,900 per semester",,yes,https://embuni.ac.ke/fee-structure/,96900
+105,fees-bachelors,What is the yearly fee for Bachelor of Science in Civil Engineering?,"KES 285,120 per year",,yes,https://embuni.ac.ke/fee-structure/,285120
+106,fees-bachelors,How much is the fee per semester for Bachelor of Science in Cyber Security?,"KES 129,600 per semester",,yes,https://embuni.ac.ke/fee-structure/,129600
+107,fees-bachelors,What is the yearly fee for Bachelor of Science in Information Technology?,"KES 232,560 per year",,yes,https://embuni.ac.ke/fee-structure/,232560
+108,fees-bachelors,How much is the fee per semester for Bachelor of Arts (Social Work)?,"KES 69,818 per semester",,yes,https://embuni.ac.ke/fee-structure/,69818
+109,fees-bachelors,What is the yearly fee for Bachelor of Science in Community Health and Development?,"KES 261,630 per year",,yes,https://embuni.ac.ke/fee-structure/,261630
+110,fees-bachelors,How much is the fee per semester for Bachelor of Education (Science)?,"KES 116,280 per semester",,yes,https://embuni.ac.ke/fee-structure/,116280
+111,fees-bachelors,How much is the fee per semester for Bachelor of Science (Agriculture)?,"KES 97,200 per semester",,yes,https://embuni.ac.ke/fee-structure/,97200
+112,fees-bachelors,What is the yearly fee for Bachelor of Science (Biology)?,"KES 213,180 per year",,yes,https://embuni.ac.ke/fee-structure/,213180
+113,fees-bachelors,How much is the fee per semester for Bachelor of Science (Mathematics With Computing)?,"KES 106,590 per semester",,yes,https://embuni.ac.ke/fee-structure/,106590
+114,fees-other,How much is PhD tuition per year?,"KES 150,000 per year (75,000 per semester)",1,yes,Sep_2024_Fees-structure-for-PhD.pdf,150000
+115,fees-other,What is the yearly tuition for a full-time Masters in a science-based course?,"KES 130,000 per year (65,000 per semester)",1,yes,Sep_2024_Fees-structure-for-Masters-Fulltime-SSP.pdf,130000
+116,fees-other,What is the yearly tuition for the Postgraduate Diploma in Education?,"KES 100,000 per year (50,000 per semester)",1,yes,Sep_2024_Fees-structure-for-PostGraduate-Diploma-in-Education.pdf,100000
+117,fees-other,What is the yearly tuition for diploma courses?,"KES 60,000 per year (30,000 per semester)",1,yes,Sep_2024_Fees-structure-for-UoEm-Diploma-programmes.pdf,60000
+118,fees-other,How much is tuition per semester for certificate courses?,"KES 19,500 per semester",1,yes,Sep_2024_Fees-structure-for-UoEm-Certificate-programmes.pdf,19500
+119,fees-other,What is the yearly examination fee for diploma students?,"KES 3,000 per year (1,500 per semester)",1,yes,Sep_2024_Fees-structure-for-UoEm-Diploma-programmes.pdf,3000
+120,fees-other,What is the caution money for certificate students?,"KES 2,000, paid once",1,yes,Sep_2024_Fees-structure-for-UoEm-Certificate-programmes.pdf,2000
+121,fees-other,What is the yearly examination fee for PhD students?,"KES 12,000 per year (6,000 per semester)",1,yes,Sep_2024_Fees-structure-for-PhD.pdf,12000
+122,fees-other,How much is CPA tuition per semester?,"KES 10,000 per semester",1,yes,Sep_2024_Fees-structure-for-CPA_ATD.pdf,10000
+123,fees-other,What is the yearly examination fee for the Masters full-time science courses?,"KES 12,000 per year (6,000 per semester)",1,yes,Sep_2024_Fees-structure-for-Masters-Fulltime-SSP.pdf,12000
+124,fees-other,What is the yearly examination fee for the Postgraduate Diploma in Education?,"KES 8,500 per year (4,250 per semester)",1,yes,Sep_2024_Fees-structure-for-PostGraduate-Diploma-in-Education.pdf,8500
+125,fees-other,How much is the identity card fee for diploma students?,"KES 500, paid once",1,yes,Sep_2024_Fees-structure-for-UoEm-Diploma-programmes.pdf,500
+126,paybill,What are the steps to pay fees through the student portal?,"Log in at students.embuni.ac.ke, go to Financials, then Fee Payment, enter the Amount To Pay, press Pay and choose a payment mode",1-3,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,financials;fee payment;amount to pay
+127,paybill,What are the default username and password for the student portal?,Your full admission number for both,1,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,admission number
+128,paybill,"In the student portal, what do I click after Financials?",Fee Payment,2,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,fee payment
+129,paybill,Which field do I use to enter how much I want to pay?,"The field called Amount To Pay, then press Pay",3,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,amount to pay
+130,paybill,What do I receive after I have paid fees through the portal?,A notification from M-PESA on the payment made,3,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,notification
+131,paybill,Who can I email if I have trouble with portal fee payment?,support.ict@embuni.ac.ke or dir.ict@embuni.ac.ke,3,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,support.ict@embuni.ac.ke
+132,paybill,What is the website address for logging in to pay fees?,"http://students.embuni.ac.ke/ (note: the handbook gives portal.embuni.ac.ke, a document conflict)",1,yes,GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf,students.embuni.ac.ke|portal.embuni.ac.ke
+133,not-in-docs,What is the tuition fee for Bachelor of Medicine and Surgery?,REFUSE,,no,,
+134,not-in-docs,How much does the Bachelor of Architecture cost per semester?,REFUSE,,no,,
+135,not-in-docs,What is the dollar to shilling exchange rate today?,REFUSE,,no,,
+136,not-in-docs,What is the Wi-Fi password for the library?,REFUSE,,no,,
+137,multipart,What is the University of Embu motto and what are its core values?,"Motto: Knowledge Transforms; core values: Integrity, Professionalism, Team work, Innovativeness, Customer focus",2,yes,,knowledge transforms;integrity;customer focus
+138,multipart,How many books can an undergraduate borrow and how many can a postgraduate borrow?,Undergraduate 4 books (14 days); postgraduate 6 books (30 days),58,yes,,4;6
+139,multipart,When are CAT 1 and CAT 2 done and what must I carry to the exam room?,"CAT 1 6th-7th week, CAT 2 10th or 11th week; Examination Card and student ID",39,yes,,6th;examination card
+140,multipart,What is the surcharge for paying fees late and what is the minimum first payment under phased payment?,"Surcharge KShs 3,000 plus 2.5% admin fee; at least 50% before the registration deadline",17,yes,,"3,000|3000;50"
+141,multipart,What are the Health Unit's opening hours and where are students referred when it cannot treat them?,"Mon-Fri 8am-10pm, weekends/public holidays 8am-5pm; Embu Level 5 Hospital",22,yes,,10:00 p.m.|10.00 p.m.|10 p.m.;level 5
+142,multipart,What attendance do I need to sit exams and what happens if I cheat in an exam?,At least 70% of lectures per unit; expulsion from the University,39,yes,,70;expulsion
+143,multipart,Who is the Vice-Chancellor and what is the student portal address?,Prof. Daniel Mugendi Njiru; http://portal.embuni.ac.ke/,6,yes,,njiru;portal.embuni.ac.ke
+144,multipart,What is the tuition per semester for BSc Computer Science and what is the HELB loan amount per year?,"KES 129,600 per semester; HELB amount not in documents (should say it does not know that part)",,yes,,
+145,fresh,can i be kicked out for cheating,"Yes, cheating (examination malpractice) is punished by expulsion",44,yes,,expul
+146,fresh,my phone was in my pocket during an exam is that a problem,"Yes, a mobile phone in the exam room counts as malpractice; the penalty is expulsion",44,yes,,expul
+147,fresh,how late can i walk into an exam,Not more than 30 minutes after the exam starts,44,yes,,30
+148,fresh,when is the first cat done,CAT 1 is in the 6th-7th week of the semester,39,yes,,6th
+149,fresh,what do i have to bring to sit my exams,"Examination Card and student ID, displayed on the desk",44,yes,,examination card
+150,fresh,my id got stolen what do i do,Report to Security and fill an Abstract form; pay the replacement fee at Finance; take the abstract and receipt to ICT,59,yes,,abstract
+151,fresh,can i pay school fees in parts,"Yes, phased payment: at least 50% before the registration deadline, 75% by week 7, balance by week 11",17,yes,,50
+152,fresh,what happens if i pay my fees late,"KShs 3,000 surcharge plus 2.5% administrative fee on the outstanding balance",17,yes,,"3,000|3000"
+153,fresh,deadline for submitting graduation forms,At least four weeks before graduation,46,yes,,four|4
+154,fresh,is the health unit open at night,Mon-Fri until 10:00 p.m.; weekends and public holidays 8 a.m. to 5 p.m.,22,yes,,10:00 p.m.|10.00 p.m.|10 p.m.
+155,fresh,i am pregnant and live in the hostel who should i tell,Report to the University Medical Officer within the first three months; move out of the hostel at least three months before confinement,53,yes,,medical officer
+156,fresh,how many books can a masters student borrow,6 books,58,yes,,6|six
+157,fresh,who is the vc of embu uni,Prof. Daniel Mugendi Njiru,6,yes,,njiru
+158,fresh,what is embu uni's slogan,Knowledge Transforms,2,yes,,knowledge transforms
+159,fresh,what if i stay away from my hostel for 2 weeks without telling anyone,Two continuous weeks absent without permission means forfeiting residence,50,yes,,forfeit
+160,fresh,max number of units when i have a retake,Seven; an eighth only with the Dean's written approval,42,yes,,seven|7
+161,fresh,how long do i have to appeal if the disciplinary committee finds me guilty,"14 days, in writing to the Vice-Chancellor",56,yes,,14|fourteen
+162,fresh,what kcse grade gets me into a degree,C+ at KCSE (or C- with a relevant diploma),14,yes,,c+
+163,fresh,which matatu goes to the university from embu town,REFUSE,,no,,
+164,fresh,what is the capital of france,REFUSE,,no,,
+165,elearning,how do i get to the e-learning site,"Go to www.embuni.ac.ke and click the E-Learning tab (On-Campus Blended), or type https://e-learning.embuni.ac.ke/",1,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,e-learning.embuni.ac.ke|embuni.ac.ke
+166,elearning,what username do i use for e-learning,"Your admission number, with the first letter in small letters",2,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,admission number
+167,elearning,what are the password rules for the e-learning account,"A mixture of a capital letter, numbers and special characters (#, @, $)",2,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,special
+168,elearning,i made an e-learning account but i cant log in,First confirm the account by clicking the link sent to your student email,3,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,confirm
+169,elearning,how do i enrol in my unit on e-learning,"Search for the unit on Home, pick the one on your timetable (current semester), then click Enroll me under self-enrolment",6,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,enroll me|enrol me
+170,elearning,what can i find on my unit page in e-learning,"Web-conference links, welcome message, resources and tools, topics, discussion forums, assignments and CATs",6,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,forum
+171,elearning,how do i join an online class,"Open the meeting link, type your names and registration number, enter the room passcode, tick I'm not a robot and click Join Meeting",15,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,join meeting
+172,elearning,the online class wont let me in what should i check,"Check the passcode is typed correctly, clear cache and browser history, check the internet connection and the microphone/earpiece",16,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,cache|passcode
+173,elearning,i forgot my e-learning password,"Click Lost Password, search with your username or email, open the reset link sent to your email and set a new password",17,yes,E-LEARNING_MANUAL_FOR_STUDENTS.pdf,lost password
+174,elearning,what is the room passcode for the online class,REFUSE,,no,,
+175,elearning,how much does it cost to use the e-learning platform,REFUSE,,no,,

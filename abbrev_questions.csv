@@ -1,0 +1,9 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+22,general,how far is the uni from embu town and which road is it on,About 3 km from Embu town along the Embu-Meru highway (approx. 125 km north-east of Nairobi),10,yes,,
+157,fresh,who is the vc of embu uni,Prof. Daniel Mugendi Njiru,6,yes,,njiru
+158,fresh,what is embu uni's slogan,Knowledge Transforms,2,yes,,knowledge transforms
+176,abbrev,who is the vc,Prof. Daniel Mugendi Njiru,6,yes,,njiru
+177,abbrev,how many books can an ug borrow,4 books for 14 days,58,yes,,4
+178,abbrev,how many books can a pg student borrow,6 books,58,yes,,6
+179,abbrev,what is the pass mark for masters at the uni,50%,46,yes,,50
+180,abbrev,where is the uni located,About 3 km from Embu town along the Embu-Meru highway,10,yes,,embu

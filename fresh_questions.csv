@@ -1,0 +1,21 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+145,fresh,can i be kicked out for cheating,"Yes, cheating (examination malpractice) is punished by expulsion",44,yes,,expul
+146,fresh,my phone was in my pocket during an exam is that a problem,"Yes, a mobile phone in the exam room counts as malpractice; the penalty is expulsion",44,yes,,expul
+147,fresh,how late can i walk into an exam,Not more than 30 minutes after the exam starts,44,yes,,30
+148,fresh,when is the first cat done,CAT 1 is in the 6th-7th week of the semester,39,yes,,6th
+149,fresh,what do i have to bring to sit my exams,"Examination Card and student ID, displayed on the desk",44,yes,,examination card
+150,fresh,my id got stolen what do i do,Report to Security and fill an Abstract form; pay the replacement fee at Finance; take the abstract and receipt to ICT,59,yes,,abstract
+151,fresh,can i pay school fees in parts,"Yes, phased payment: at least 50% before the registration deadline, 75% by week 7, balance by week 11",17,yes,,50
+152,fresh,what happens if i pay my fees late,"KShs 3,000 surcharge plus 2.5% administrative fee on the outstanding balance",17,yes,,"3,000|3000"
+153,fresh,deadline for submitting graduation forms,At least four weeks before graduation,46,yes,,four|4
+154,fresh,is the health unit open at night,Mon-Fri until 10:00 p.m.; weekends and public holidays 8 a.m. to 5 p.m.,22,yes,,10:00 p.m.|10.00 p.m.|10 p.m.
+155,fresh,i am pregnant and live in the hostel who should i tell,Report to the University Medical Officer within the first three months; move out of the hostel at least three months before confinement,53,yes,,medical officer
+156,fresh,how many books can a masters student borrow,6 books,58,yes,,6|six
+157,fresh,who is the vc of embu uni,Prof. Daniel Mugendi Njiru,6,yes,,njiru
+158,fresh,what is embu uni's slogan,Knowledge Transforms,2,yes,,knowledge transforms
+159,fresh,what if i stay away from my hostel for 2 weeks without telling anyone,Two continuous weeks absent without permission means forfeiting residence,50,yes,,forfeit
+160,fresh,max number of units when i have a retake,Seven; an eighth only with the Dean's written approval,42,yes,,seven|7
+161,fresh,how long do i have to appeal if the disciplinary committee finds me guilty,"14 days, in writing to the Vice-Chancellor",56,yes,,14|fourteen
+162,fresh,what kcse grade gets me into a degree,C+ at KCSE (or C- with a relevant diploma),14,yes,,c+
+163,fresh,which matatu goes to the university from embu town,REFUSE,,no,,
+164,fresh,what is the capital of france,REFUSE,,no,,

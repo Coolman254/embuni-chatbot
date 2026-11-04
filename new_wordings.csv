@@ -1,0 +1,9 @@
+id,category,question,expected_answer,expected_source_page,in_documents,expected_source,must_contain
+181,fix_retest,can i drive my own car into campus,"Only with prior written permission from the University administration, with a driving licence and valid insurance",48,yes,,permission
+182,fix_retest,can i keep a motorbike at school,"Only with prior written permission, proof of licence and insurance",48,yes,,permission
+183,fix_retest,what mark do i need to get a B,60% and above but less than 70%,46,yes,,60
+184,fix_retest,what percentage is a grade D,40% and above but less than 50%,46,yes,,40
+185,fix_retest,after i click financials in the portal what do i press next,Fee Payment,1,yes,,fee payment
+186,fix_retest,where do i type the amount i want to pay in the portal,The Amount To Pay field,1,yes,,amount to pay
+187,fix_retest,my online class link is not working what can i check,"Passcode typed correctly, clear cache and browser history, internet connection, microphone and earpiece",16,yes,,cache
+188,fix_retest,"i joined the online class but nothing happens, is my mic the problem","Check the device microphone is enabled and the earpiece works, plus passcode, cache and internet",16,yes,,microphone

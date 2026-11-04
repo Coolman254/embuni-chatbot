@@ -1,0 +1,4 @@
+SOURCE: GOVERNMENT_PAYBILL_FEE_PAYMENT_PROCEDURE.pdf
+TITLE: Paying fees in the student portal: what to click
+
+How to pay fees through the student portal (Government paybill fee payment procedure). After logging in to the portal (http://students.embuni.ac.ke/), press Financials. Next press Fee Payment. Then enter the amount you would like to pay in the field called Amount To Pay and press Pay. Select the mode of payment you want to use and follow the steps to complete payment. After payment you receive a notification from MPESA. For help contact the ICT team at support.ict@embuni.ac.ke or dir.ict@embuni.ac.ke.

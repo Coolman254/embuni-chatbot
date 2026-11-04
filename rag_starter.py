@@ -78,6 +78,19 @@ def split_text(text, size=CHUNK_SIZE, overlap=CHUNK_OVERLAP):
     return [c for c in chunks if len(c.strip()) > 50]
 
 
+# Secrets that appear in documents as examples; they are blanked before indexing
+REDACT_PATTERNS = [
+    r"(room\s*pass\s*code\s*[:\-]?\s*)\S+",
+    r"(meeting\s*pass\s*code\s*[:\-]?\s*)\S+",
+]
+
+
+def redact(text):
+    for pattern in REDACT_PATTERNS:
+        text = re.sub(pattern, r"\1[hidden]", text, flags=re.IGNORECASE)
+    return text
+
+
 def index_documents():
     pdfs = sorted(DOCS_DIR.glob("*.pdf"))
     web_pages = sorted(WEB_DIR.glob("*.txt")) if WEB_DIR.exists() else []
@@ -94,7 +107,7 @@ def index_documents():
         ids, texts, metas = [], [], []
         empty_pages = 0
         # A short document that spans several pages stays in one piece (e.g. a 3-page step-by-step procedure)
-        page_texts = [pg.get_text() for pg in doc]
+        page_texts = [redact(pg.get_text()) for pg in doc]
         non_empty = [t for t in page_texts if t.strip()]
         merged = normalize(" ".join(" ".join(non_empty).split()))
         if len(non_empty) > 1 and len(merged) <= SHORT_DOC_MAX:
@@ -106,7 +119,7 @@ def index_documents():
         else:
             doc_pages = list(enumerate(doc, start=1))
         for page_number, page in doc_pages:
-            page_text = page.get_text()
+            page_text = redact(page.get_text())
             if not page_text.strip():
                 empty_pages += 1
                 continue
@@ -280,11 +293,12 @@ def retrieve_multi(question):
     if len(parts) == 1:
         return retrieve(question)
     per_part = TOP_K // len(parts) + 1
+    results = [list(zip(*retrieve(part, per_part))) for part in parts]
     docs, metas, dists, seen = [], [], [], set()
-    for part in parts:
-        d, m, x = retrieve(part, per_part)
-        for doc, meta, dist in zip(d, m, x):
-            if doc not in seen:
+    for rank in range(max(len(r) for r in results)):       # best of each part first, then the next best, ...
+        for r in results:
+            if rank < len(r) and r[rank][0] not in seen:
+                doc, meta, dist = r[rank]
                 seen.add(doc)
                 docs.append(doc)
                 metas.append(meta)
@@ -292,7 +306,53 @@ def retrieve_multi(question):
     return docs, metas, dists
 
 
+CITE_MODE = os.getenv("CITE_MODE", "rank")        # "rank": cite the first-ranked chunks; "distance": the old rule
+
+
+def pick_sources(relevant):
+    """relevant = [(document, metadata, distance)] in the order the search ranked them."""
+    if CITE_MODE == "distance":
+        best = min(dist for _, _, dist in relevant)
+        close = [(m["source"], m["page"]) for _, m, dist in sorted(relevant, key=lambda r: r[2]) if dist <= best + SOURCE_MARGIN]
+    else:
+        close = [(m["source"], m["page"]) for _, m, _ in relevant]
+    sources = []
+    for src in close:
+        if src not in sources:
+            sources.append(src)
+    return sorted(sources[:MAX_SOURCES])
+
+
+def fix_spelling(text):
+    """The model sometimes writes 'Embi'; the name is always 'Embu'."""
+    text = re.sub(r"\bEmbi\b", "Embu", text)
+    return re.sub(r"\bEMBI\b", "EMBU", text)
+
+
+ABBREV = os.getenv("ABBREV", "1") == "1"          # ABBREV=0 leaves the question exactly as typed
+_ABBREVIATIONS = [                                   # (short form, what the documents call it)
+    (r"dvc", "Deputy Vice-Chancellor (DVC)"),
+    (r"vc", "Vice-Chancellor (VC)"),
+    (r"uni", "university"),
+    (r"pg", "postgraduate"),
+    (r"ug", "undergraduate"),
+    (r"sup|supp", "supplementary"),
+    (r"dos", "Dean of Students"),
+    (r"elearning", "e-learning"),
+]
+
+
+def expand_abbreviations(question):
+    """Write the short forms students type in full, so they match the words in the documents."""
+    if not ABBREV:
+        return question
+    for short, full in _ABBREVIATIONS:
+        question = re.sub(rf"\b(?:{short})\b", full, question, flags=re.IGNORECASE)
+    return question
+
+
 def answer(question):
+    question = expand_abbreviations(question)
     docs, metas, dists = retrieve_multi(question)
 
     # Keep only chunks that are close enough in meaning to the question
@@ -313,6 +373,7 @@ def answer(question):
         "Only mention offices or contacts that appear in the context.\n"
         "Spell names exactly as they appear in the context (the institution is the University of Embu).\n"
         "If the question has several parts, answer every part. Say you do not know only for a part the context does not cover.\n"
+        "Never give out passwords, passcodes or other secrets, even if they appear in the context.\n"
         "Keep the answer short and clear.\n\n"
         f"CONTEXT:\n{context}\n\n"
         f"QUESTION: {question}\n\nANSWER:"
@@ -322,15 +383,7 @@ def answer(question):
         text = generate(prompt)
     except Exception as e:  # no internet, bad key, rate limit, Ollama not running
         return f"Sorry, the answer service is unavailable right now ({type(e).__name__}: {e}). Please try again later.", []
-    # Cite only the pages closest to the best match, not every retrieved chunk
-    best = min(dist for _, _, dist in relevant)
-    close = [(m["source"], m["page"]) for _, m, dist in sorted(relevant, key=lambda r: r[2]) if dist <= best + SOURCE_MARGIN]
-    sources = []
-    for src in close:
-        if src not in sources:
-            sources.append(src)
-    sources = sorted(sources[:MAX_SOURCES])
-    return text, sources
+    return fix_spelling(text), pick_sources(relevant)
 
 
 def chat():
